@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000004, guid: ef18a6aa914c8d546a998e50e43cd0b0, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -123,34 +123,13 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!50 &192829378 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 9157806702925663258, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
-  m_PrefabInstance: {fileID: 1093287305}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1093287305
+--- !u!1001 &750520833
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4294976122020328769, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4492245529619231281, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5011977335157146833, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
-      propertyPath: m_UseMotor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6805902245251409862, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 192829378}
     - target: {fileID: 9157806702925663252, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -203,10 +182,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9157806702925663253, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
-      propertyPath: acceleration
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 9157806702925663254, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -221,10 +196,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157806702925663258, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
       propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9157806702925663258, guid: 101ab3d2b1573ee458ac754de22a323c, type: 3}
-      propertyPath: m_UseAutoMass
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
