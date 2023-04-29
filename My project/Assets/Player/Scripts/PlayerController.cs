@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidbody;
     public float acceleration;
     public Camera camera;
+    public float force;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -23,13 +25,13 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(transform.rotation.z) >= 0.5f && Mathf.Abs(GetComponent<Rigidbody2D>().angularVelocity) < 0.3f )
         {
 
-            float torque = -45f;
+            float torque = -45f * force;
             rigidbody.AddTorque(torque);
         }
         if (Mathf.Abs(transform.rotation.z) <= -0.5f && Mathf.Abs(GetComponent<Rigidbody2D>().angularVelocity) > -0.3f )
         {
 
-            float torque = 45f;
+            float torque = 45f * force;
             rigidbody.AddTorque(torque);
         }
         camera.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
